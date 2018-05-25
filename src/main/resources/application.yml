@@ -20,6 +20,19 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+#    thymeleaf:
+#      mode: HTML5
+#    thymeleaf:
+#      encoding: UTF-8
+#    thymeleaf:
+#      content-type: text/html
+
+    #开发时关闭缓存,不然没法看到实时页面
+#    thymeleaf:
+#      cache: false
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.dm.dmspringbootmybatis.model

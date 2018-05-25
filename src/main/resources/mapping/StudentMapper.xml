@@ -7,7 +7,7 @@
     <result column="sex" property="sex" jdbcType="INTEGER" />
     <result column="age" property="age" jdbcType="INTEGER" />
     <association property="member" javaType="com.dm.dmspringbootmybatis.model.Member">
-      <id property="id" column="id"/>
+      <!--<id property="id" column="id"/>-->
       <result property="name" column="name" />
       <!--<result property="size" column="size"/>-->
     </association>
